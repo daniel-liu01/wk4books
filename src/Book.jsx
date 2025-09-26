@@ -1,9 +1,19 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Book.css'; 
 
 const Book = ({ image, price, url, onRemove }) => {
+
+  const handleClick = () => {
+    setSelected(!selected); // Toggle highlight
+  };
+
+  const [selected, setSelected] = useState(false);
+
   return (
-    <div className="book">
+    <div
+      className={`book ${selected ? 'selected' : ''}`}
+      onClick={handleClick}
+    >
       <div className="book-top">
         <button onClick={onRemove} className="remove-button">
           <span>Remove</span>
