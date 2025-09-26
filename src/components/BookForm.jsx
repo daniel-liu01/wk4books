@@ -1,3 +1,5 @@
+import '../App.css';
+
 function BookForm() {
     return (
         <div className='form-container'>
@@ -8,6 +10,7 @@ function BookForm() {
                     <input
                         type='text'
                         name='title'
+                        className='form-input'
                         placeholder='Book title'
                     />
                 </div>
@@ -16,6 +19,7 @@ function BookForm() {
                     <input
                         type='text'
                         name='pr-author'
+                        className='form-input'
                         placeholder='Name'
                     />
                 </div>
@@ -24,6 +28,7 @@ function BookForm() {
                     <input
                         type='text'
                         name='pr-publisher'
+                        className='form-input'
                         placeholder='Publisher name'
                     />
                 </div>
@@ -31,6 +36,7 @@ function BookForm() {
                     <label htmlFor='pr-publicationYear' className="form-label">Publication Year</label>
                     <input
                         type='text'
+                        className='form-input'
                         name='pr-publicationYear'
                         placeholder='Year'
                     />
@@ -40,6 +46,7 @@ function BookForm() {
                     <input
                         type='text'
                         name='pr-language'
+                        className='form-input'
                         placeholder='Name'
                     />
                 </div>
@@ -48,10 +55,13 @@ function BookForm() {
                     <input
                         type='text'
                         name='pr-pages'
+                        className='form-input'
                         placeholder='e.g. 235'
                     />
                 </div>
-                <button className='btn primary'>Save</button>
+                <div className='button-container'>
+                     <button className='saveButton'>Save</button>
+                </div>
             </form>
         </div>
     );
