@@ -1,0 +1,41 @@
+.books {
+  display: flex;
+  flex-direction: row;
+}
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; 
+}
+
+.header {
+  margin: 0 auto;
+  width: 100%;
+  background-color: #0A5C36;
+  text-align: center; 
+  padding: 40px; 
+  color: white; 
+  border-bottom: 12px solid #a8e6cf;
+}
+
+.footer {
+  margin: 0 auto;
+  margin-top: auto;
+  background-color: #0A5C36;
+  text-align: center; 
+  padding: 40px; 
+    width: 100%;
+  color: white; 
+}
+
+.footer-content {
+  margin: 0 auto;
+}
+
+.book-list {
+  display: flex;
+  flex-direction: row;       
+  flex-wrap: wrap;           
+  gap: 20px;                 
+  justify-content: flex-start;   
+}
