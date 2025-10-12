@@ -28,7 +28,7 @@ function App() {
           <BookForm />
         </Modal>
 
-        <div className="book-list">
+        {/* <div className="book-list">
           {books.map((book) => (
             <Book
               key={book.isbn13}
@@ -38,7 +38,7 @@ function App() {
               onRemove={() => remove(book.isbn13)}
             />
           ))}
-        </div>
+        </div> */}
       </div>
 
       <footer className="footer">
